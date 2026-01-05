@@ -1,0 +1,54 @@
+{
+  "model_type": "Bayesian discrete-time survival model",
+  "time_unit": "month",
+  "link_function": "logit",
+  "max_followup_months": 36,
+  "sampling": {
+    "engine": "NUTS (HMC)",
+    "chains": null,
+    "tuning_steps": null,
+    "draws": null
+  },
+  "hierarchical_structure": {
+    "grade_random_intercept": true
+  },
+  "evaluation": {
+    "posterior_predictive_checks": true,
+    "ppc_sample_size": 10000,
+    "metrics": [
+      "observed_event_rate",
+      "mean_predicted_rate",
+      "brier_score",
+      "mean_abs_gap_by_month",
+      "max_abs_gap_by_month",
+      "mean_abs_error_person_month"
+    ],
+    "ppc_metrics": {
+      "ppc_rows": 10000.0,
+      "observed_event_rate": 0.0106,
+      "mean_predicted_rate": 0.012802375000000001,
+      "brier_score": 0.01043528171875,
+      "mean_abs_error_person_month": 0.022959375,
+      "mean_abs_gap_by_month": 0.004789523038419641,
+      "max_abs_gap_by_month": 0.011918316831683167
+    }
+  },
+  "published_artifacts": [
+    "bayes_discrete_time_summary_full.csv",
+    "bayes_top_coefficients_or.csv",
+    "table_ppc_metrics.csv",
+    "bayes_model_diagnostics_paragraph.txt",
+    "bayes_results_section.txt",
+    "bayes_figure_captions.txt",
+    "bayes_table_captions.txt",
+    "bayes_discrete_time_ppc.csv",
+    "bayes_discrete_time_features_used.csv",
+    "figures/bayes_baseline_monthly_hazard.png",
+    "figures/bayes_grade_effects.png",
+    "figures/bayes_ppc_calibration.png"
+  ],
+  "data_release": {
+    "raw_data_included": false,
+    "note": "Raw loan-level data and model traces are not included in this public pack."
+  }
+}

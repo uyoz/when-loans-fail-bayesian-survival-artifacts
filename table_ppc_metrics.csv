@@ -1,0 +1,8 @@
+metric,value
+ppc_rows,10000.0
+observed_event_rate,0.0106
+mean_predicted_rate,0.012802375000000001
+brier_score,0.01043528171875
+mean_abs_error_person_month,0.022959375
+mean_abs_gap_by_month,0.004789523038419641
+max_abs_gap_by_month,0.011918316831683167

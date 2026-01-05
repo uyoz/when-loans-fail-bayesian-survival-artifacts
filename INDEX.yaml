@@ -1,0 +1,17 @@
+pack_name: github_public_artifacts
+purpose: Derived artifacts supporting Methods, Results, and Discussion sections (no raw data, no code).
+files:
+  - bayes_discrete_time_features_used.csv
+  - bayes_discrete_time_ppc.csv
+  - bayes_discrete_time_summary_full.csv
+  - bayes_figure_captions.txt
+  - bayes_model_diagnostics_paragraph.txt
+  - bayes_results_section.txt
+  - bayes_table_captions.txt
+  - bayes_top_coefficients_or.csv
+  - model_run_config_public.json
+  - table_ppc_metrics.csv
+figures:
+  - figures/bayes_baseline_monthly_hazard.png
+  - figures/bayes_grade_effects.png
+  - figures/bayes_ppc_calibration.png
